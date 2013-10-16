@@ -39,7 +39,7 @@ namespace MPG_CALC
         private async void Button_Click_1(object sender, RoutedEventArgs e)
         {
 
-            if (!isValid(cap.Text)) 
+            if (!isValid(cost.Text)) 
             {
 
                 var messageDialog2 = new MessageDialog("Please enter a value");
@@ -64,14 +64,15 @@ namespace MPG_CALC
                 {
 
 
-                    double capacity = Convert.ToDouble(cap.Text);
+                    double capacity = Convert.ToDouble(cost.Text);
                     double mile = Convert.ToDouble(miles.Text);
-                    double gallons = capacity / 4.54;
-                    double MPG = Math.Round(mile / gallons, 2);
-                    result.Text = MPG.ToString();
-                    double kml = MPG * 0.425;
-                    double kmlr = Math.Round(kml, 2);
-                    kmresult.Text = kmlr.ToString();
+
+
+                    double pence = capacity * 100;
+                    double costpermile = pence / mile;
+                    double resultno = Math.Round(costpermile, 2);
+
+                    result.Text = resultno.ToString();
                 }
 
                 catch (Exception ex)

@@ -18,10 +18,10 @@
         <TextBlock HorizontalAlignment="Left" Margin="134,155,0,0" TextWrapping="Wrap" Text="Cost Per Litre (£) : " VerticalAlignment="Top" FontSize="48" Height="139" Width="419"/>
         <Button Content="Calculate" HorizontalAlignment="Left" Margin="262,457,0,0" VerticalAlignment="Top" FontSize="22" Click="Button_Click_1" Width="147"/>
         <TextBox x:Name="miles" HorizontalAlignment="Left" Margin="518,349,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="22"/>
-        <TextBox x:Name="cap" HorizontalAlignment="Left" Margin="518,155,0,0" TextWrapping="Wrap" VerticalAlignment="Top" RenderTransformOrigin="0.526,-1.125" FontSize="22"/>
+        <TextBox x:Name="cost" HorizontalAlignment="Left" Margin="518,155,0,0" TextWrapping="Wrap" VerticalAlignment="Top" RenderTransformOrigin="0.526,-1.125" FontSize="22"/>
         <TextBlock HorizontalAlignment="Left" Margin="352,36,0,0" TextWrapping="Wrap" Text="Fuel Economy Calculator" VerticalAlignment="Top" FontSize="48" Width="571"/>
         <TextBlock HorizontalAlignment="Left" Margin="695,155,0,0" TextWrapping="Wrap" Text="Pence per Mile: " VerticalAlignment="Top" FontSize="48" Height="139" Width="419"/>
-        <TextBlock HorizontalAlignment="Left" Margin="1114,155,0,0" TextWrapping="Wrap" Text="a" VerticalAlignment="Top" FontSize="48" Height="78" Width="71"/>
+        <TextBlock x:Name="result" HorizontalAlignment="Left" Margin="1114,155,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="48" Height="78" Width="198"/>
 
     </Grid>
 </Page>
